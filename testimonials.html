@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/pravin/Desktop/WBBML/testimonals.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./testimonials_files/w3.css">
+
+<meta name="theme-color", content="#4dbaa8" />
+<link rel="manifest" href="manifest.json">
+
+<script>
+    //service worker supported by browser
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    };
+</script>
+
+<title>TESTIMONALS</title>
+</head>
+<body><header>
+	<div class="overlay">
+<br><br><br><br>
+<div class="animated-title">
+  <div class="text-top">
+    <div>
+      <span>SPARKLE EVENT MANAGEMENT</span>
+      <span>A Complete Event Management Solution</span>
+    </div>
+  </div>
+ <div class="text-bottom">
+    <div>Our aims to organise events with a primary motive of cost minimization for client yet making sure<br>that all the requirements are met with a creative precision.
+    We strive to provide perfection and theme<br>oriented events.We provide a number of services to help plan everything from scratch to finish and
+                 the<br>stress away from you.</div>
+  </div>
+</div>
+
+</div></header>
+<style>
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  height: 50vmin;
+  left: 70%;
+  position: absolute;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  width: 206vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  margin-bottom: 35px;
+  
+}
+.animated-title > div div span {
+  display: block;
+}
+
+
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+.animated-title > div.text-bottom {
+  bottom: 1px;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  left: 7%;
+  transform: translate(0, -100%);
+  font-family: "Oswald", serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mySlides {display:none;}
+
+*{padding: 0; top-margin: 20px; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHj0XfPsP8R2wYU9e3LiEZe-V80pMxnsE7w6HSeYApzbtzhAgS');
+	text-align: center;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+
+.container {
+  border: 1px solid darkgoldenrod;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+   margin-right: 100px;
+   margin-left: 100px;
+   margin-bottom: 100px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: center;
+  margin-right: 300px;
+   margin-left: 550px;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+
+.heading {
+     font-family: "TIMES NEW ROMAN";
+     font-size: 25px;
+     text-align: center;
+     color: darkGoldenrod;
+  }
+
+.para {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 20px;
+    font-family: "Times new roman";
+    text-align: left;
+    }
+
+h1 {
+    font-size: 25px;
+    font-family: "Roman",serif;
+    text-align: center;
+    color: darkGoldenrod;
+   }
+
+
+
+.p { 
+    font-size: 20px;
+    font-family: "Roman",serif;
+    text-align: center;
+    color: black;
+    margin-right: 200px;
+   margin-left: 200px;
+  }
+
+nav {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-family: 'Dancing Script';
+  font-size: 19px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+  
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(50, 50, 50);
+  transition: .45s ease-in-out;
+}
+
+
+</style>
+
+
+
+<br><br>
+<nav>
+  <div class="nav-bg"></div>
+  <br><br>
+  <ul>
+    <li><a href="/index.html">Home &emsp;</a></li>
+    <li><a href="/events.html">Events &emsp;</a></li>
+    <li><a href="/catering.html">Catering &emsp;</a></li>
+    <li><a href="/testimonial.html">Testimonals &emsp;</a></li>
+    
+  </ul>
+</nav>
+<p class="heading"><b>LOOK WHAT OUR CLIENTS HAVE TO SAY ABOUT US..</b></p>
+<br>
+<div class="container">
+  <img src="images/man-avatar-icon-flat-vector-19152370.jpg" style="width:200px;height: 190px;">
+  <p class="p">"Our engagement was a sudden affair and we had just two days to plan everything. We decided to handover the job to some professionals while we did stuff important 
+               for us at our level. A friend of mine suggested me Sparkle Events and our first meeting with the team made us comfortable and confident at the same time 
+               that we were at the right place. We were just expecting a decent arrangements from them in such a short period. On the day of our engagement we were surprised at the 
+               level of event they have put forward, it was way beyond our expectations. Our wedding is due in six months and I'm sure even that will be handled gracefully by them."
+                <br><u>-MR.AAKASH KASLIWAL</u></p>
+</div>
+
+<br>
+<div class="container">
+  <img src="images/a65832155622ac173337874f02b218fb.png" style="width:220px;height: 200px;">
+  <p class="p">"My daughter wanted to hire an Sparkle Event Management company after she had seen their work in one of her friends wedding. My budget although being a decent one I 
+               had a doubt that outsourcing a wedding would increase it abruptly. But as my daughter insisted on the idea we decided to go ahead with it and the difference was much 
+              less than what I had thought of, plus the load was almost brought down to nil by these guys. I have no regrets in taking this decision and loved their work. They delivered
+               what we asked for and also added their special touch into it and also their valuable inputs in our confusing situations."
+              <br><u>-MRS.PATNI</u></p>
+</div>
+
+<br>
+<div class="container">
+  <img src="images/man-avatar-icon-flat-vector-19152370.jpg" style="width:220px;height: 200px;">
+  <p class="p">"It was my son's fifth birthday and we were sure we wanted it grand and at the same time without any personal legwork. We got Sparkle Event's reference from facebook. 
+                We talked to them and they gave us a very good picture of what they could do. I just hired them and everything right from invitations to giveaways to cake and candles
+                was taken care of. It was a great experience."
+              <br><u>-MR.AJAY JAIN</u></p>
+</div>
+<br>
+<br>
+</body>
+</html>
